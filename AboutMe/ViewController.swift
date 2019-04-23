@@ -12,17 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-//        print("My name is Kobe McKee")
+
         nameLabel.isHidden = true
         hobbiesLabel.isHidden = true
-        
-        // nameLabel.text = ""      Set to empty string (invisible)
-        // nameLabel.alpha = 0      alpha = 0 is hidden, alpha = 1 is visible
-        
     }
-    
     
     @IBAction func introduceYourselfButtonPressed(_ sender: Any) {
         
@@ -32,7 +25,6 @@ class ViewController: UIViewController {
         hobbiesLabel.isHidden = false
         
     }
-    
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var hobbiesLabel: UILabel!
