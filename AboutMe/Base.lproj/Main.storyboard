@@ -36,12 +36,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUo-Tc-tKz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUo-Tc-tKz" userLabel="Name Label">
                                 <rect key="frame" x="76" y="89" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQi-lz-LKz">
+                                <rect key="frame" x="105.5" y="818" width="203" height="44"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Introduce Yourself"/>
+                                <connections>
+                                    <action selector="introduceYourselfButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bnU-Id-5Zt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -49,13 +57,19 @@
                             <constraint firstItem="z9z-Eb-Ygf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="6ZS-FE-HB7"/>
                             <constraint firstItem="k2Y-cL-iaO" firstAttribute="leading" secondItem="GQh-Rh-Uhw" secondAttribute="trailing" constant="8" symbolic="YES" id="Ero-Mf-ALB"/>
                             <constraint firstItem="z9z-Eb-Ygf" firstAttribute="baseline" secondItem="MUo-Tc-tKz" secondAttribute="baseline" id="NGo-Hp-zND"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MQi-lz-LKz" secondAttribute="bottom" id="b2Z-vX-nWL"/>
                             <constraint firstItem="GQh-Rh-Uhw" firstAttribute="baseline" secondItem="k2Y-cL-iaO" secondAttribute="baseline" id="bWj-y5-Rv0"/>
                             <constraint firstItem="GQh-Rh-Uhw" firstAttribute="top" secondItem="z9z-Eb-Ygf" secondAttribute="bottom" constant="24" id="fid-7z-W22"/>
+                            <constraint firstItem="MQi-lz-LKz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="glu-mE-DmU"/>
                             <constraint firstItem="z9z-Eb-Ygf" firstAttribute="leading" secondItem="GQh-Rh-Uhw" secondAttribute="leading" id="ku7-JT-m6P"/>
                             <constraint firstItem="MUo-Tc-tKz" firstAttribute="leading" secondItem="z9z-Eb-Ygf" secondAttribute="trailing" constant="8" symbolic="YES" id="yxe-aP-M3R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hobbiesLabel" destination="k2Y-cL-iaO" id="F9H-tz-f5d"/>
+                        <outlet property="nameLabel" destination="MUo-Tc-tKz" id="SXH-zN-eAW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

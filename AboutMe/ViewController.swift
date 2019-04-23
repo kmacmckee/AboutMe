@@ -14,10 +14,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        print("My name is Kobe McKee")
+//        print("My name is Kobe McKee")
         
-        
-        print("Hello world")
+
     }
+    
+    
+    @IBAction func introduceYourselfButtonPressed(_ sender: Any) {
+        
+        nameLabel.text = "Kobe McKee"
+        hobbiesLabel.text = "Basketball, Baseball, Video Games, Fishing, Fly Fishing, Avoiding Running"
+        
+        
+    }
+    
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var hobbiesLabel: UILabel!
+    
 }
 
